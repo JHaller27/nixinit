@@ -1,0 +1,21 @@
+# User-defined additions
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
+alias celar="clear"
+alias yeet="git push"
+alias YEET="git push -f"
+alias yoink="git pull"
+alias whomstve="git blame"
+
+alias tsgrep="grep -r --include=*.ts --exclude=*.d.ts --exclude-dir=node_modules"
+
+export MSUSER="jahaller"
+export USERNAME="$USER"
+
+eval $(thefuck --alias)
+eval $(thefuck --alias oops)
+eval $(thefuck --alias FUCK)
+eval $(thefuck --alias ffs)
+eval $(thefuck --alias FFS)
+

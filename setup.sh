@@ -85,6 +85,12 @@ try_update_config "vimrc" "\" $NIXINIT_MARKER"
 # Git
 try_install git
 
+cecho -n "Generating git aliases..."
+cat "$CONFIG_ROOT/gitaliases" | while IFS="=" read -ra line; do
+    git config --global "alias.${line[0]}" "${line[1]}"
+done
+cecho "done"
+
 if ! grep -qF "name =" ~/.gitconfig; then
     read -p "Git username: " git_uname
     git config --global user.name "$git_uname"

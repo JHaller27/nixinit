@@ -9,6 +9,7 @@ alias yoink="git pull"
 alias whomstve="git blame"
 
 alias tsgrep="grep -r --include=*.ts --exclude=*.d.ts --exclude-dir=node_modules"
+alias csgrep="grep -r --include=*.cs --exclude-dir=bin --exclude-dir=obj"
 
 export MSUSER="jahaller"
 export USERNAME="$USER"

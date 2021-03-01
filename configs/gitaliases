@@ -1,13 +1,13 @@
 s=status
-ss=status -s
+ss="status -s"
 d=diff
-dc=diff --cached
-dn=diff --name-only
+dc="diff --cached"
+dn="diff --name-only"
 c=checkout
 b=branch
-lg=log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
-au=add -u
-aup=add -up
+lg="log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+au="add -u"
+aup="add -up"
 stop="!f() { git stash && git stash drop; }; f"
 cm="!f() { git commit -m \"$1\"; }; f"
 a=add
